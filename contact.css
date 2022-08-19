@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:ITCEDSCR;
+    src:url("ITCEDSCR.TTF");
+}
+
+.nav_tag{
+    padding: 0;
+    background-color: #ffa123;
+    background-image: linear-gradient(90deg,#912054 0,#241bb1 100%);
+/*    background-image: linear-gradient(90deg,#565bebc7 0%,#d13ec6e3 35%,#00ffeccf 35%,#e96e6e 71%,#36c545b5 71%,#3bc7c0 100%);*/
+}
+
+.container-fluid{
+    padding: 0;    
+}
+
+.hns h3{
+    display: none;
+    font-family: itcedscr;
+    font-size:2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;  
+    color: darkblue;
+    text-shadow: 1px 1px 1px red;
+    color: #fbff00;
+    text-shadow: 1px 1px 1px #33ff00;
+    transition: text-shadow 1s .2s,color 2s .5s;
+    letter-spacing: 2px;
+}
+.navbar-brand{
+    width: 25%;
+}
+.navbar-brand h3{
+    font-family: itcedscr;
+    letter-spacing: 2px;
+    font-size:2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: darkblue;
+    text-shadow: 1px 1px 2px red;
+    color: #fbff00;
+    text-shadow: 1px 1px 1px #33ff00;
+    transition: color 2s .2s,text-shadow 1s 1s;
+}
+.hns h3:hover,.navbar-brand h3:hover{
+    text-shadow: 3px 2px 2px black;
+    color:cyan;
+}
+.firul, .secul{   
+    width: 37.5%;
+    
+}
+.firul{
+    padding-left: 1%;
+    
+}
+.secul{
+    justify-content:flex-end;
+    padding-right: 1%;
+   
+}
+.secul li{
+    margin-left: 10px;
+}
+
+.firul li{   
+    border: 1px solid black;    
+    border-radius: 10px;
+    box-shadow:  1px 1px 1px 1px blue;
+    background-color: aquamarine;
+    margin-right: 2%;   
+}
+.firul li:hover{
+    transform: translateY(5%);
+    box-shadow:  1px 1px 1px 1px red;
+    background-color:forestgreen;
+    cursor:pointer;
+    color: white; 
+}
+.firul li a{
+    padding: 0;  
+    font-weight: 600; 
+    color: #000000;
+}
+.firul li a:hover{
+    color: inherit;
+}
+.secul li a,#follow > div > a {
+    --bs-navbar-nav-link-padding-x: 0;
+    padding: 0;   
+    color: #000000;
+}
+button{   
+    margin: 5px;
+    --bs-navbar-toggler-padding-y: 0.1rem;
+    --bs-navbar-toggler-padding-x:0.2rem;
+}
+
+.secul li a span,#follow > div > a > span {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    height:26px;
+    width: 27px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 3px;
+    
+}
+#follow > div > a > span{
+    border: 1px solid white;
+}
+.secul li a span i::before,#follow > div > a > span i::before{
+    left: -1px;
+    position: absolute;
+    top: -3px;
+    
+}
+#insta,#insta2{
+    border-radius: 4px;
+}
+
+#topbtn::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+#topbtn{
+/*    border: 1px solid black;*/
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: border-top .1s 0s,border-right .1s .1s,border-bottom .1s .2s,border-left .1s .3s,background-color .4s 0s;
+    position: fixed;
+    bottom:2.6%;;
+    right: 1%;
+    height: 2.1em;
+    width: 3.2em;
+    width: 3.4em;
+    text-align: center;
+    background-color:#bf0101;
+    opacity: 100%;
+    font-weight: 500;
+    z-index: 10;  
+    color: white;
+}
+
+#topbtn a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+#topbtn:hover{    
+    background-color: #1aa72f;       
+    transform: translateY(5%);
+    cursor: pointer;
+    opacity: 100%;
+    border-top: 3px solid aqua;
+    border-right: 3px solid aqua;
+    border-bottom: 3px solid aqua;
+    border-left: 3px solid aqua;
+}
+#follow span a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    background-color: deeppink;
+    background-image: linear-gradient(to bottom,#9c76e5 0%,#49236a 100%);
+    padding: 1em 0;
+}
+#mobema2{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+#mobema2 h5{
+    display: inline-block;
+}
+#use{
+    margin: .5em 0;
+}
+
+#formsection{
+    width: 55%;
+    margin: 0em auto;
+    padding: 1em 0;
+    text-align: center;
+    background-color:cadetblue;
+    padding-top: .5em;
+    box-shadow: 2px 2px 1px 1px beige;
+}
+#formsection form{
+    width: 50%;
+    margin: 1em auto; 
+    
+}
+input{
+    margin-top: .2em;
+    margin-bottom: 1em;
+    width:100%;
+    height: 1.5em;
+}
+
+textarea{
+    margin-top: .2em;
+    margin-bottom: 1em;
+    width: 100%;
+    
+}
+
+.lbninp{
+    width: 100%; 
+    text-align: left;
+}
+
+#inpdiv{
+    width:100%;
+    text-align: end;
+}
+#inpbtn{
+    width: 27%;
+    background-color:forestgreen; 
+    color: white;
+    border-radius: 5px;
+   border: 1px solid black;
+    height: auto;
+   
+    
+}
+#inpbtn:hover{
+    transform: translateY(5%);
+    box-shadow:  1px 1px 1px 1px red;
+    background-color: aquamarine;
+    color: black;
+    cursor:pointer;
+    
+}
+
+
+
+
+footer{    
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1em;
+    padding-bottom: .2em;
+    background-color: #000000;
+    position: relative;
+    color: white;
+}   
+   
+}
+
+#follow div{
+    margin-top: .5em;
+}
+
+
+#mobema{
+   display: flex;
+   flex-direction: column;
+}
+#mobema h5{  
+    display: inline-block;
+}
+#rights p{
+    text-align: end;
+    font-size: .75em;
+    margin-bottom: 0;
+}
+#follow span a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@media only screen and (max-width:768px){
+   
+    .firul{
+        width: 100%;
+    }
+    .firul li{
+        width: 20%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .hns{
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .hns h3{
+        display: inline-block;
+    }
+    .secul{
+        display: block;
+        padding-left: 1%;
+        margin-top: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .secul li{
+       display: inline-block;
+        margin: 0 10px 0 0;
+        
+    }
+    
+    #formsection{
+    width: 90%;
+    margin: 0em auto;
+    padding: 1em 0;
+    text-align: center;
+    background-color:cadetblue;
+    padding-top: .5em;
+    box-shadow: 2px 2px 1px 1px beige;
+    }
+    #formsection form{
+        width: 65%;
+        margin: 1em auto; 
+
+    }
+    
+   
+    
+    footer{    
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1em;
+    padding-bottom: .2em;
+
+    position: relative;    
+    }
+    
+    
+    
+    
+}
